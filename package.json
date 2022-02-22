@@ -1,0 +1,48 @@
+{
+  "name": "json-api-tools",
+  "version": "0.1.0",
+  "description": "implement json api with proper serialization functions and type definitions",
+  "main": "src/index.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": "https://github.com/eyecuelab/json-api-tools.git",
+  "author": "Jeremy Banka <hello@jeremybanka.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@eyecuelab/eslint-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "esbuild": "^0.14.23",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@eyecuelab"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "max-len": [
+        "error",
+        {
+          "code": 100,
+          "ignoreRegExpLiterals": true,
+          "ignoreTemplateLiterals": true,
+          "ignorePattern": "^import\\s.+\\sfrom\\s.+$",
+          "ignoreUrls": true
+        }
+      ]
+    }
+  }
+}
