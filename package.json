@@ -1,5 +1,5 @@
 {
-  "name": "json-api-tools",
+  "name": "@eyecuelab/json-api-tools",
   "version": "0.1.0",
   "description": "implement json api with proper serialization functions and type definitions",
   "main": "src/index.ts",
