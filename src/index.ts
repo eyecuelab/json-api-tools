@@ -67,6 +67,10 @@ export const serializeResource = <
   id,
 })
 
+export * from "./resource"
+export * from "./errors"
+export * from "./document"
+
 // export const deserialize = <
 //   DATA extends ResourceObject<Resource> | ResourceObject<Resource>[]
 //   // RELATED_DICT extends Record<string, Model>,
