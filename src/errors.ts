@@ -1,5 +1,5 @@
 import type { Json } from "."
-import type { Link, Links } from "./document"
+import type { Link, Links } from "./link"
 
 export type ErrorObject_Optional<META extends Json | undefined = undefined> = {
   id?: string

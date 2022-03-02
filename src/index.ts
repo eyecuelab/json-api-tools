@@ -1,9 +1,5 @@
-import type {
-  ResourceFlat,
-  Resource,
-  ResourceObject,
-  Relationships,
-} from "./resource"
+import type { Relationships } from "./relationship"
+import type { ResourceFlat, Resource, ResourceObject } from "./resource"
 import treeShake from "./util/shallowTreeShake"
 
 // borrowed from recoil
