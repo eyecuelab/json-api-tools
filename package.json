@@ -2,20 +2,21 @@
   "name": "@eyecuelab/json-api-tools",
   "version": "0.1.0",
   "description": "implement json api with proper serialization functions and type definitions",
-  "main": "src/index.ts",
-  "files": [
-    "src",
-    "dist"
-  ],
+  "main": "dist/index.js",
+  "types": "src/index.ts",
   "repository": "https://github.com/eyecuelab/json-api-tools.git",
   "author": "Jeremy Banka <hello@jeremybanka.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "node esbuild.config.js"
+  },
   "devDependencies": {
     "@eyecuelab/eslint-config": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
-    "esbuild": "^0.14.23",
+    "esbuild": "^0.14.25",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-import": "^2.25.4",
